@@ -5,7 +5,7 @@ FROM node:18.17.1
 WORKDIR /usr/src/app
 
 # Update npm to the latest version
-RUN npm install -g npm@latest
+RUN npm install -g npm@10.0.0
 
 # Change to non-root user
 USER node
@@ -14,6 +14,8 @@ USER node
 COPY --chown=node:node . .
 
 # Install dependencies
-RUN npm install
+#RUN #npm install
+
+EXPOSE 3000
 
 CMD ["bash", "-c", "while true; do echo Docker is running...; sleep 100; done"]
