@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Oswald } from 'next/font/google'
 import React from 'react'
+import { getCssText } from '@/styles'
+import { globalStyles } from '@/styles/global'
 
 const inter = Inter({ subsets: ['latin'] })
 const oswald = Oswald({
@@ -20,8 +22,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  globalStyles()
   return (
     <html lang="pt-BR">
+      <head>
+        <style>{getCssText()}</style>
+      </head>
       <body className={`${inter.className} ${oswald.className}`}>
         {children}
       </body>
