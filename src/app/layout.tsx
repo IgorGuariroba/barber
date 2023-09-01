@@ -1,8 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Oswald } from 'next/font/google'
 import React from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
+const oswald = Oswald({
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Barber - Barbers & Hair Cutting',
@@ -17,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${oswald.className}`}>
+        {children}
+      </body>
     </html>
   )
 }
