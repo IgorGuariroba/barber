@@ -17,7 +17,10 @@ export default function RootLayout({
         <ThemeProvider theme={defaultTheme}>
             <Head>
                 <title>Barber - Barbers & Hair Cutting</title>
-                <meta name="description" content="Barber - Barbers & Hair Cutting"/>
+                <meta name="description" content="Barbearia online"/>
+                <meta charSet="UTF-8"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <style>{`
                 body {
                     font-family: ${inter.className};
