@@ -1,13 +1,12 @@
-import './globals.css'
-import type {Metadata} from 'next'
+'use client'
+import {ThemeProvider} from "styled-components";
+import {defaultTheme} from "@/styles/themes/default";
+import {GlobalStyle} from "@/styles/global";
+import Head from 'next/head';
 import {Inter} from 'next/font/google'
+import React from "react";
 
 const inter = Inter({subsets: ['latin']})
-
-export const metadata: Metadata = {
-    title: 'Barber - Barbers & Hair Cutting',
-    description: 'Barber - Barbers & Hair Cutting',
-}
 
 export default function RootLayout({
                                        children,
@@ -15,8 +14,18 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="pt-br">
-        <body className={inter.className}>{children}</body>
-        </html>
+        <ThemeProvider theme={defaultTheme}>
+            <Head>
+                <title>Barber - Barbers & Hair Cutting</title>
+                <meta name="description" content="Barber - Barbers & Hair Cutting"/>
+                <style>{`
+                body {
+                    font-family: ${inter.className};
+                }
+                `}</style>
+            </Head>
+            <body className={inter.className}>{children}</body>
+            <GlobalStyle/>
+        </ThemeProvider>
     )
 }
