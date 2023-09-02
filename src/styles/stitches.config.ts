@@ -26,7 +26,8 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       jet: 'hsl(0, 0%, 21%)',
     },
     fonts: {
-      roboto: 'var(--font-roboto)',
+      ffOswald: "'Oswald', 'sans-serif'",
+      ffRubik: "'Rubik', sans-serif",
     },
     transitions: {
       transition1: '0.25s ease',

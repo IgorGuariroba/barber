@@ -40,9 +40,11 @@ export const Container = styled('div', {
     maxWidth: '1200px',
   },
 })
-// :is(:hover, :focus) { color: var(--indian-yellow); }
-//     .header-top-list { justify-content: space-between; }
+
 export const HeaderTopList = styled('ul', {
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -51,6 +53,9 @@ export const HeaderTopList = styled('ul', {
   paddingBlock: '15px',
   fontSize: '15px',
   transition: '$transition1',
+  '@phoneMin': {
+    justifyContent: 'space-between',
+  },
   '@computer': {
     gap: 30,
   },
