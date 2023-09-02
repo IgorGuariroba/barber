@@ -1,5 +1,10 @@
 import { IoCallOutline } from 'react-icons/io5'
-import { Container, HeaderStyled, HeaderTop } from './header.styled'
+import {
+  Container,
+  HeaderStyled,
+  HeaderTop,
+  HeaderTopList,
+} from './header.styled'
 import { BiLogoFacebookCircle, BiTime } from 'react-icons/bi'
 import {
   AiFillYoutube,
@@ -14,7 +19,7 @@ export function Header() {
     <HeaderStyled>
       <HeaderTop>
         <Container>
-          <ul className="header-top-list">
+          <HeaderTopList>
             <li className="header-top-item">
               <IoCallOutline />
               <p className="item-title">Call Us :</p>
@@ -23,7 +28,6 @@ export function Header() {
                 012 (345) 67 895
               </a>
             </li>
-
             <li className="header-top-item">
               <BiTime />
 
@@ -31,7 +35,6 @@ export function Header() {
 
               <p className="item-text">Sunday - Friday, 08 am - 09 pm</p>
             </li>
-
             <li>
               <ul className="social-list">
                 <li>
@@ -59,7 +62,7 @@ export function Header() {
                 </li>
               </ul>
             </li>
-          </ul>
+          </HeaderTopList>
         </Container>
       </HeaderTop>
       <div className="header-bottom" data-header>
