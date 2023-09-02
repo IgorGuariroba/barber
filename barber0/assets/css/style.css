@@ -999,7 +999,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
     align-self: flex-start;
     line-height: 1.6;
   }
-  
+
 
 
   /**
@@ -1197,7 +1197,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .navbar-link { padding-inline: 10px; }
 
-  
+
 
   /**
    * HERO

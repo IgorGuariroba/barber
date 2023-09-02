@@ -1,23 +1,22 @@
+import { IoCallOutline } from 'react-icons/io5'
+import { Container, HeaderStyled, HeaderTop } from './header.styled'
+import { BiLogoFacebookCircle, BiTime } from 'react-icons/bi'
 import {
-  ArrowSquareRight,
-  DotsThreeCircle,
-  FacebookLogo,
-  PhoneCall,
-  Timer,
-  TwitterLogo,
-  WechatLogo,
-  YoutubeLogo,
-} from '@phosphor-icons/react'
-import { HeaderStyled, HeaderTop } from './header.styled'
+  AiFillYoutube,
+  AiOutlineArrowRight,
+  AiOutlineTwitter,
+} from 'react-icons/ai'
+import { PiWechatLogo } from 'react-icons/pi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 export function Header() {
   return (
     <HeaderStyled>
       <HeaderTop>
-        <div className="container">
+        <Container>
           <ul className="header-top-list">
             <li className="header-top-item">
-              <PhoneCall size={32} />
+              <IoCallOutline />
               <p className="item-title">Call Us :</p>
 
               <a href="tel:01234567895" className="item-link">
@@ -26,7 +25,7 @@ export function Header() {
             </li>
 
             <li className="header-top-item">
-              <Timer size={32} />
+              <BiTime />
 
               <p className="item-title">Opening Hour :</p>
 
@@ -37,31 +36,31 @@ export function Header() {
               <ul className="social-list">
                 <li>
                   <a href="#" className="social-link">
-                    <FacebookLogo size={32} />
+                    <BiLogoFacebookCircle />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link">
-                    <TwitterLogo size={32} />
+                    <AiOutlineTwitter />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link">
-                    <YoutubeLogo size={32} />
+                    <AiFillYoutube />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link">
-                    <WechatLogo size={32} />
+                    <PiWechatLogo />
                   </a>
                 </li>
               </ul>
             </li>
           </ul>
-        </div>
+        </Container>
       </HeaderTop>
       <div className="header-bottom" data-header>
         <div className="container">
@@ -115,12 +114,12 @@ export function Header() {
             aria-label="toggle menu"
             data-nav-toggler
           >
-            <DotsThreeCircle size={32} />
+            <GiHamburgerMenu />
           </button>
 
           <a href="#" className="btn has-before">
             <span className="span">Appointment</span>
-            <ArrowSquareRight size={32} />
+            <AiOutlineArrowRight />
           </a>
         </div>
       </div>

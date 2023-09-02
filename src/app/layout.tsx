@@ -22,14 +22,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  globalStyles()
   return (
     <html lang="pt-BR">
-      <head>
-        <style>{getCssText()}</style>
-      </head>
       <body className={`${inter.className} ${oswald.className}`}>
         {children}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `${getCssText()} ${globalStyles()}`,
+          }}
+        ></style>
       </body>
     </html>
   )
