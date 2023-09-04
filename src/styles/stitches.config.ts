@@ -28,6 +28,22 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       ffOswald: "'Oswald', 'sans-serif'",
       ffRubik: "'Rubik', sans-serif",
     },
+    radii: {
+      radius5: '5px',
+    },
+    fontSizes: {
+      fs40: 'automatic',
+      fs14: '1.4rem',
+      computer: {
+        fs40: '11rem',
+      },
+    },
+    space: {
+      sectionPadding: '120px',
+      computer: {
+        sectionPadding: '120px',
+      },
+    },
     transitions: {
       transition1: '0.25s ease',
       transition2: '0.5s ease',
