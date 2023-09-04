@@ -1,5 +1,14 @@
 import { styled } from '@/styles/stitches.config'
 import { IoCallOutline } from 'react-icons/io5'
+import { styled } from '@stitches/react'
+import { BiLogoFacebookCircle, BiTime } from 'react-icons/bi'
+import {
+  AiFillYoutube,
+  AiOutlineArrowRight,
+  AiOutlineTwitter,
+} from 'react-icons/ai'
+import { PiWechatLogo } from 'react-icons/pi'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 export const HeaderStyled = styled('header', {
   display: 'flex',
@@ -89,6 +98,8 @@ export const IoCallOut = styled(IoCallOutline, {
     color: '$indianYellow',
     '--ionicon-stroke-width': '50px',
   },
+  pointerEvents: 'none',
+  display: 'block',
 })
 
 export const ItemTitle = styled('p', {
@@ -113,4 +124,39 @@ export const ItemLink = styled('a', {
       },
     },
   },
+})
+
+export const StyledFacebookIcon = styled(BiLogoFacebookCircle, {
+  pointerEvents: 'none',
+  display: 'block',
+})
+
+export const StyledBiTime = styled(BiTime, {
+  pointerEvents: 'none',
+  display: 'block',
+})
+
+export const StyledYoutubeIcon = styled(AiFillYoutube, {
+  pointerEvents: 'none',
+  display: 'block',
+})
+
+export const StyledArrowRightIcon = styled(AiOutlineArrowRight, {
+  pointerEvents: 'none',
+  display: 'block',
+})
+
+export const StyledTwitterIcon = styled(AiOutlineTwitter, {
+  pointerEvents: 'none',
+  display: 'block',
+})
+
+export const StyledWechatLogo = styled(PiWechatLogo, {
+  pointerEvents: 'none',
+  display: 'block',
+})
+
+export const StyledHamburgerMenu = styled(GiHamburgerMenu, {
+  pointerEvents: 'none',
+  display: 'block',
 })

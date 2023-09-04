@@ -7,15 +7,14 @@ import {
   IoCallOut,
   ItemLink,
   ItemTitle,
+  StyledArrowRightIcon,
+  StyledBiTime,
+  StyledFacebookIcon,
+  StyledHamburgerMenu,
+  StyledTwitterIcon,
+  StyledWechatLogo,
+  StyledYoutubeIcon,
 } from './header.styled'
-import { BiLogoFacebookCircle, BiTime } from 'react-icons/bi'
-import {
-  AiFillYoutube,
-  AiOutlineArrowRight,
-  AiOutlineTwitter,
-} from 'react-icons/ai'
-import { PiWechatLogo } from 'react-icons/pi'
-import { GiHamburgerMenu } from 'react-icons/gi'
 
 export function Header() {
   return (
@@ -30,7 +29,7 @@ export function Header() {
             </HeaderTopItem>
 
             <li className="header-top-item">
-              <BiTime />
+              <StyledBiTime />
 
               <p className="item-title">Opening Hour :</p>
 
@@ -40,25 +39,25 @@ export function Header() {
               <ul className="social-list">
                 <li>
                   <a href="#" className="social-link">
-                    <BiLogoFacebookCircle />
+                    <StyledFacebookIcon />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link">
-                    <AiOutlineTwitter />
+                    <StyledTwitterIcon />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link">
-                    <AiFillYoutube />
+                    <StyledYoutubeIcon />
                   </a>
                 </li>
 
                 <li>
                   <a href="#" className="social-link">
-                    <PiWechatLogo />
+                    <StyledWechatLogo />
                   </a>
                 </li>
               </ul>
@@ -118,12 +117,12 @@ export function Header() {
             aria-label="toggle menu"
             data-nav-toggler
           >
-            <GiHamburgerMenu />
+            <StyledHamburgerMenu />
           </button>
 
           <a href="#" className="btn has-before">
             <span className="span">Appointment</span>
-            <AiOutlineArrowRight />
+            <StyledArrowRightIcon />
           </a>
         </div>
       </div>
