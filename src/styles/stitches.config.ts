@@ -14,7 +14,6 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       eerieBlack2: 'hsl(0, 0%, 12%)',
       eerieBlack285: 'hsla(0, 0%, 12%, 0.85)',
       eerieBlack3: 'hsl(0, 0%, 8%)',
-      sonicSilver: 'hsl(0, 0%, 44%)',
       davysGray: 'hsl(210, 9%, 31%)',
       lightGray: 'hsl(0, 0%, 80%)',
       platinum: 'hsl(0, 0%, 91%)',
@@ -39,6 +38,103 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       phone: '(min-width: 768px)',
       tablet: '(min-width: 992px)',
       computer: '(min-width: 1200px)',
+    },
+  },
+})
+export const globalStyles = globalCss({
+  '*': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+  },
+  '*::before': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+  },
+  '*::after': {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+  },
+  li: {
+    listStyle: 'none',
+  },
+  a: {
+    display: 'block',
+    color: 'inherit',
+    textDecoration: 'none',
+  },
+  img: {
+    display: 'block',
+    height: 'auto',
+  },
+  span: {
+    display: 'block',
+  },
+  data: {
+    display: 'block',
+  },
+  input: {
+    background: 'none',
+    border: 'none',
+    font: 'inherit',
+    display: 'block',
+    width: '100%',
+  },
+  select: {
+    display: 'block',
+    background: 'none',
+    border: 'none',
+    font: 'inherit',
+    width: '100%',
+  },
+  button: {
+    display: 'block',
+    background: 'none',
+    border: 'none',
+    font: 'inherit',
+    cursor: 'pointer',
+  },
+  svg: {
+    display: 'block',
+    pointerEvents: 'pointer',
+  },
+  textarea: {
+    display: 'block',
+    background: 'none',
+    border: 'none',
+    font: 'inherit',
+    width: '100%',
+  },
+  html: {
+    fontFamily: '$ffRubik',
+    fontSize: '10px',
+    scrollBehavior: 'smooth',
+  },
+  body: {
+    background: '$white',
+    color: '$sonicSilver',
+    fontSize: '1.6rem',
+    lineHeight: 2,
+  },
+  ':focus-visible': {
+    outlineOffset: '4px',
+  },
+
+  // correção estilo scrollbar para WebKit browsers
+  '::-webkit-scrollbar': {
+    width: '10px',
+  },
+
+  '::-webkit-scrollbar-track': {
+    backgroundColor: 'hsl(0, 0%, 98%)',
+  },
+
+  '::-webkit-scrollbar-thumb': {
+    backgroundColor: 'hsl(0, 0%, 80%)',
+    '&:hover': {
+      backgroundColor: 'hsl(0, 0%, 70%)',
     },
   },
 })

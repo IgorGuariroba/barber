@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "clear": "rimraf .next/*",
+    "dev": "npm run clear && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -27,6 +28,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@rocketseat/eslint-config": "^2.1.0"
+    "@rocketseat/eslint-config": "^2.1.0",
+    "rimraf": "^5.0.1"
   }
 }

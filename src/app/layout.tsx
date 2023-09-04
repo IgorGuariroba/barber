@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Oswald } from 'next/font/google'
 import React from 'react'
-import { getCssText } from '@/styles/stitches.config'
-import { globalStyles } from '@/styles/global'
+import { getCssText, globalStyles } from '@/styles/stitches.config'
+// import { globalStyles } from '@/styles/global'
 
 const inter = Inter({ subsets: ['latin'] })
 const oswald = Oswald({

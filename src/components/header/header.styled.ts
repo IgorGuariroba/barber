@@ -2,6 +2,7 @@ import { styled } from '@/styles/stitches.config'
 
 export const HeaderStyled = styled('header', {
   display: 'flex',
+  backgroundColor: 'red',
 })
 
 export const HeaderTop = styled('div', {
