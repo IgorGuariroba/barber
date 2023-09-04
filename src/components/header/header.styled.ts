@@ -1,8 +1,8 @@
 import { styled } from '@/styles/stitches.config'
+import { IoCallOutline } from 'react-icons/io5'
 
 export const HeaderStyled = styled('header', {
   display: 'flex',
-  backgroundColor: 'red',
 })
 
 export const HeaderTop = styled('div', {
@@ -59,5 +59,58 @@ export const HeaderTopList = styled('ul', {
   },
   '@computer': {
     gap: 30,
+  },
+})
+
+export const HeaderTopItem = styled('li', {
+  display: 'none',
+  '@phoneMin': {
+    variants: {
+      isFirst: {
+        true: {
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+        },
+      },
+    },
+  },
+
+  '@computer': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+  },
+})
+
+export const IoCallOut = styled(IoCallOutline, {
+  '@phoneMin': {
+    fontSize: '18px',
+    color: '$indianYellow',
+    '--ionicon-stroke-width': '50px',
+  },
+})
+
+export const ItemTitle = styled('p', {
+  '@phoneMin': {
+    color: '$eerieBlack1',
+    fontWeight: '$fw500',
+  },
+})
+
+export const ItemLink = styled('a', {
+  '@phoneMin': {
+    transition: 'transition1',
+    '&:hover, &:focus': {
+      color: '$indianYellow',
+    },
+
+    variants: {
+      secondChild: {
+        true: {
+          marginInlineEnd: 'auto',
+        },
+      },
+    },
   },
 })

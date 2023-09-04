@@ -1,9 +1,12 @@
-import { IoCallOutline } from 'react-icons/io5'
 import {
   Container,
   HeaderStyled,
   HeaderTop,
+  HeaderTopItem,
   HeaderTopList,
+  IoCallOut,
+  ItemLink,
+  ItemTitle,
 } from './header.styled'
 import { BiLogoFacebookCircle, BiTime } from 'react-icons/bi'
 import {
@@ -20,14 +23,12 @@ export function Header() {
       <HeaderTop>
         <Container>
           <HeaderTopList>
-            <li className="header-top-item">
-              <IoCallOutline />
-              <p className="item-title">Call Us :</p>
+            <HeaderTopItem isFirst={true}>
+              <IoCallOut />
+              <ItemTitle>Call Us :</ItemTitle>
+              <ItemLink href="tel:01234567895">012 (345) 67 895</ItemLink>
+            </HeaderTopItem>
 
-              <a href="tel:01234567895" className="item-link">
-                012 (345) 67 895
-              </a>
-            </li>
             <li className="header-top-item">
               <BiTime />
 

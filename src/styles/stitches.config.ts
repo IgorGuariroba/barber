@@ -39,5 +39,11 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       tablet: '(min-width: 992px)',
       computer: '(min-width: 1200px)',
     },
+    fontWeights: {
+      fw300: '300',
+      fw500: '500',
+      fw600: '600',
+      fw700: '700',
+    },
   },
 })
