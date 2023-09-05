@@ -1,31 +1,34 @@
 import Image from 'next/image'
+import {
+  ButtonExplore,
+  Container,
+  HeroText,
+  HeroTitle,
+  Section,
+  Span,
+} from './main.styled'
 
 export function Main() {
   return (
     <main>
       <article>
-        <section
-          className="section hero has-before has-bg-image"
-          id="home"
-          aria-label="home"
-          // style="background-image: url('/assets/images/hero-banner.jpg')"
-        >
-          <div className="container">
-            <h1 className="h1 hero-title">Barbers & Hair Cutting</h1>
+        <Section id="home" aria-label="home">
+          <Container>
+            <HeroTitle>Barbers & Hair Cutting</HeroTitle>
 
-            <p className="hero-text">
+            <HeroText>
               Sit amet consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua suspendisse ultrices
               gravida
-            </p>
+            </HeroText>
 
-            <a href="#" className="btn has-before">
-              <span className="span">Explore Our Services</span>
+            <ButtonExplore href="#">
+              <Span>Explore Our Services</Span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-          </div>
-        </section>
+            </ButtonExplore>
+          </Container>
+        </Section>
 
         <section
           className="section service"
