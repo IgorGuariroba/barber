@@ -32,28 +32,16 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       radius5: '5px',
     },
     fontSizes: {
-      fs40: 'automatic',
       fs14: '1.4rem',
-      computer: {
-        fs40: '11rem',
-      },
+      fs40: '11rem',
     },
     space: {
       sectionPadding: '120px',
-      computer: {
-        sectionPadding: '120px',
-      },
     },
     transitions: {
       transition1: '0.25s ease',
       transition2: '0.5s ease',
       cubicOut: 'cubic-bezier(0.33, 0.85, 0.4, 0.96)',
-    },
-    media: {
-      phoneMin: '(min-width: 575px)',
-      phone: '(min-width: 768px)',
-      tablet: '(min-width: 992px)',
-      computer: '(min-width: 1200px)',
     },
     fontWeights: {
       fw300: '300',
@@ -61,5 +49,11 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       fw600: '600',
       fw700: '700',
     },
+  },
+  media: {
+    phoneMin: '(min-width: 575px)',
+    phone: '(min-width: 768px)',
+    tablet: '(min-width: 992px)',
+    computer: '(min-width: 1200px)',
   },
 })

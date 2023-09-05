@@ -9,11 +9,7 @@ import {
 import { PiWechatLogo } from 'react-icons/pi'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-export const HeaderStyled = styled('header', {
-  '@tablet': {
-    display: 'flex',
-  },
-})
+export const HeaderStyled = styled('header', {})
 
 export const HeaderTop = styled('div', {
   '@phoneMin': {
@@ -40,11 +36,7 @@ export const HeaderTop = styled('div', {
 })
 
 export const Container = styled('div', {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
   paddingInline: '15px',
-
   '@phoneMin': {
     maxWidth: '540px',
     width: '100%',
@@ -61,24 +53,30 @@ export const Container = styled('div', {
   },
 })
 
+export const ContainerHeaderBottom = styled(Container, {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+})
+
 export const HeaderTopList = styled('ul', {
-  '&:hover, &:focus': {
-    color: '$indianYellow',
-  },
+  // '&:hover, &:focus': {
+  //   color: '$indianYellow',
+  // },
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
-  gap: '20px',
-  color: '$sonicSilver',
-  paddingBlock: '15px',
-  fontSize: '15px',
-  transition: '$transition1',
-  '@phoneMin': {
-    justifyContent: 'space-between',
-  },
-  '@computer': {
-    gap: 30,
-  },
+  // justifyContent: 'center',
+  // gap: '20px',
+  // color: '$sonicSilver',
+  // paddingBlock: '15px',
+  // fontSize: '15px',
+  // transition: '$transition1',
+  // '@phoneMin': {
+  //   justifyContent: 'space-between',
+  // },
+  // '@computer': {
+  //   gap: 30,
+  // },
 })
 
 export const HeaderTopItem = styled('li', {
@@ -245,6 +243,7 @@ export const Navbar = styled('nav', {
     maxWidth: '540px',
     width: '100%',
     marginInline: 'auto',
+    paddingInline: '0',
   },
   '@phone': {
     maxWidth: '720px',
@@ -257,7 +256,6 @@ export const Navbar = styled('nav', {
   },
 
   position: 'absolute',
-  paddingInline: 0,
   top: '100%',
   left: '15px',
   right: '15px',
@@ -303,15 +301,14 @@ export const NavbarLink = styled('a', {
 })
 
 export const Bottom = styled('a', {
+  display: 'none',
   maxWidth: '100%',
   width: '100%',
   justifyContent: 'center',
   color: 'white',
   backgroundColor: '$indianYellow',
-  display: 'flex',
   alignItems: 'center',
   gap: '10px',
-  maxWidth: 'max-content',
   padding: '10px 25px',
   fontFamily: '$ffOswald',
   fontSize: '$fs14',
@@ -328,7 +325,6 @@ export const Bottom = styled('a', {
     transform: 'skewY(-15deg) scaleY(0)',
     transition: '$transition',
     position: 'absolute',
-    content: '',
   },
 
   '&:hover::before, &:focus::before': {
@@ -342,6 +338,11 @@ export const Bottom = styled('a', {
     right: '15px',
     bottom: '15px',
     width: 'max-content',
+    maxWidth: 'max-content',
+  },
+
+  '@tablet': {
+    display: 'flex',
   },
 
   position: 'relative',

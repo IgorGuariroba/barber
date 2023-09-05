@@ -1,6 +1,7 @@
 import {
   Bottom,
   Container,
+  ContainerHeaderBottom,
   HeaderBottom,
   HeaderStyled,
   HeaderTop,
@@ -75,8 +76,8 @@ export function Header() {
         </Container>
       </HeaderTop>
       <HeaderBottom>
-        <Container>
-          <Logo href="#">
+        <ContainerHeaderBottom>
+          <Logo>
             Barber
             <Span>Hair Salon </Span>
           </Logo>
@@ -117,7 +118,7 @@ export function Header() {
             <Span>Appointment</Span>
             <StyledArrowRightIcon />
           </Bottom>
-        </Container>
+        </ContainerHeaderBottom>
       </HeaderBottom>
     </HeaderStyled>
   )
