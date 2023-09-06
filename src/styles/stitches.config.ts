@@ -25,8 +25,8 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       jet: 'hsl(0, 0%, 21%)',
     },
     fonts: {
-      ffOswald: "'Oswald', 'sans-serif'",
-      ffRubik: "'Rubik', sans-serif",
+      ffOswald: 'Oswald, sans-serif',
+      ffRubik: 'Rubik, sans-serif',
     },
     radii: {
       radius5: '5px',

@@ -60,23 +60,18 @@ export const ContainerHeaderBottom = styled(Container, {
 })
 
 export const HeaderTopList = styled('ul', {
-  // '&:hover, &:focus': {
-  //   color: '$indianYellow',
-  // },
   display: 'flex',
-  alignItems: 'center',
-  // justifyContent: 'center',
-  // gap: '20px',
-  // color: '$sonicSilver',
-  // paddingBlock: '15px',
-  // fontSize: '15px',
-  // transition: '$transition1',
-  // '@phoneMin': {
-  //   justifyContent: 'space-between',
-  // },
-  // '@computer': {
-  //   gap: 30,
-  // },
+  gap: '20px',
+  color: '$sonicSilver',
+  transition: '$transition1',
+
+  '@phoneMin': {
+    justifyContent: 'space-between',
+  },
+
+  '@computer': {
+    gap: 30,
+  },
 })
 
 export const HeaderTopItem = styled('li', {
@@ -145,26 +140,46 @@ export const StyledFacebookIcon = styled(BiLogoFacebookCircle, {
 export const StyledBiTime = styled(BiTime, {
   pointerEvents: 'none',
   display: 'block',
+
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
 })
 
 export const StyledYoutubeIcon = styled(AiFillYoutube, {
   pointerEvents: 'none',
   display: 'block',
+
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
 })
 
 export const StyledArrowRightIcon = styled(AiOutlineArrowRight, {
   pointerEvents: 'none',
   display: 'block',
+
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
 })
 
 export const StyledTwitterIcon = styled(AiOutlineTwitter, {
   pointerEvents: 'none',
   display: 'block',
+
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
 })
 
 export const StyledWechatLogo = styled(PiWechatLogo, {
   pointerEvents: 'none',
   display: 'block',
+
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
 })
 
 export const StyledHamburgerMenu = styled(GiHamburgerMenu, {
