@@ -15,6 +15,7 @@ import {
   NavbarItem,
   NavbarLink,
   NavbarList,
+  NavToggleBtn,
   Socialist,
   SocialLink,
   Span,
@@ -33,7 +34,7 @@ export function Header() {
       <HeaderTop>
         <Container>
           <HeaderTopList>
-            <HeaderTopItem isFirst={true}>
+            <HeaderTopItem>
               <IoCallOut />
               <ItemTitle>Call Us :</ItemTitle>
               <ItemLink href="tel:01234567895">012 (345) 67 895</ItemLink>
@@ -110,9 +111,9 @@ export function Header() {
             </NavbarList>
           </Navbar>
 
-          <button className="nav-toggle-btn" aria-label="toggle menu">
+          <NavToggleBtn aria-label="toggle menu">
             <StyledHamburgerMenu />
-          </button>
+          </NavToggleBtn>
 
           <Bottom href="#">
             <Span>Appointment</Span>

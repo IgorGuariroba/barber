@@ -135,15 +135,15 @@ export const ItemLink = styled('a', {
 export const StyledFacebookIcon = styled(BiLogoFacebookCircle, {
   pointerEvents: 'none',
   display: 'block',
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
 })
 
 export const StyledBiTime = styled(BiTime, {
   pointerEvents: 'none',
   display: 'block',
-
-  '&:hover, &:focus': {
-    color: '$indianYellow',
-  },
+  color: '$indianYellow',
 })
 
 export const StyledYoutubeIcon = styled(AiFillYoutube, {
@@ -285,6 +285,13 @@ export const Navbar = styled('nav', {
   },
 })
 
+export const NavToggleBtn = styled('button', {
+  color: '$white',
+  fontSize: '40px',
+  '@tablet': {
+    display: 'none',
+  },
+})
 export const NavbarList = styled('ul', {
   borderBlockStart: '1px solid $jet',
   marginBlock: '25px',
