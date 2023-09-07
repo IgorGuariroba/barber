@@ -103,7 +103,7 @@ export function Header() {
             <SpanLogo>Hair Salon </SpanLogo>
           </Logo>
 
-          <Navbar>
+          <Navbar active={active}>
             <NavbarList>
               <NavbarItem>
                 <NavbarLink href="#home">Home</NavbarLink>
