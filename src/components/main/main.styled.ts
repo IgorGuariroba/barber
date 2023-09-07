@@ -32,9 +32,6 @@ export const Section = styled('section', {
 })
 
 export const Container = styled('div', {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
   paddingInline: '15px',
 
   '@phoneMin': {

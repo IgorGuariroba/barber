@@ -1,3 +1,4 @@
+'use client'
 import {
   Bottom,
   Container,
@@ -19,6 +20,7 @@ import {
   Socialist,
   SocialLink,
   Span,
+  SpanLogo,
   StyledArrowRightIcon,
   StyledBiTime,
   StyledFacebookIcon,
@@ -27,8 +29,26 @@ import {
   StyledWechatLogo,
   StyledYoutubeIcon,
 } from './header.styled'
+import { useEffect, useState } from 'react'
 
 export function Header() {
+  const [active, setActive] = useState(false)
+
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (window.scrollY > 100) {
+        setActive(true)
+      } else {
+        setActive(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollHandler)
+
+    return () => {
+      window.removeEventListener('scroll', scrollHandler)
+    }
+  }, [])
   return (
     <HeaderStyled>
       <HeaderTop>
@@ -76,11 +96,11 @@ export function Header() {
           </HeaderTopList>
         </Container>
       </HeaderTop>
-      <HeaderBottom>
+      <HeaderBottom active={active}>
         <ContainerHeaderBottom>
           <Logo>
             Barber
-            <Span>Hair Salon </Span>
+            <SpanLogo>Hair Salon </SpanLogo>
           </Logo>
 
           <Navbar>

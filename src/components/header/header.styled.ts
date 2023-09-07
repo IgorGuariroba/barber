@@ -211,12 +211,16 @@ export const HeaderBottom = styled('div', {
   paddingBlock: '10px',
   zIndex: 4,
 
-  '&.active': {
-    position: 'fixed',
-    top: 0,
-    backgroundColor: '$richBlackFogra3950',
-    transform: 'translateY(-100%)',
-    animation: 'slideIn 0.5s ease forwards',
+  variants: {
+    active: {
+      true: {
+        position: 'fixed',
+        top: 0,
+        backgroundColor: 'var(--rich-black-fogra-39)',
+        transform: 'translateY(-100%)',
+        animation: 'slideIn 0.5s ease forwards',
+      },
+    },
   },
 
   [`& > ${Container}`]: {
@@ -232,6 +236,19 @@ export const HeaderBottom = styled('div', {
 
 export const Span = styled('span', {})
 
+export const SpanLogo = styled('span', {
+  color: '$white',
+  fontFamily: 'ffRubik',
+  fontSize: '1.3rem',
+  fontWeight: '$fw300',
+  textTransform: 'capitalize',
+  letterSpacing: '2px',
+
+  '@phoneMin': {
+    fontSize: '1.4rem',
+  },
+})
+
 export const Logo = styled('div', {
   color: '$indianYellow',
   fontFamily: '$ffOswald',
@@ -240,48 +257,46 @@ export const Logo = styled('div', {
   textTransform: 'uppercase',
   lineHeight: '1.4',
 
-  [`& > ${Span}`]: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+  '@phoneMin': {
+    fontSize: '3rem',
   },
 })
 
 export const Navbar = styled('nav', {
-  all: 'unset',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  paddingInline: '15px',
+  position: 'absolute',
+  paddingInline: 0,
+  top: '100%',
+  left: '15px',
+  right: '15px',
+  backgroundColor: 'richBlackFogra39',
+  maxHeight: 0,
+  overflow: 'hidden',
+  transition: '0.15s cubicOut',
+
+  variants: {
+    active: {
+      true: {
+        maxHeight: '321px',
+        transitionDuration: '0.5s',
+      },
+    },
+  },
 
   '@phoneMin': {
     maxWidth: '540px',
     width: '100%',
     marginInline: 'auto',
-    paddingInline: '0',
+    // paddingInline: '0',
   },
   '@phone': {
     maxWidth: '720px',
   },
   '@tablet': {
+    all: 'unset',
     maxWidth: '960px',
   },
   '@computer': {
     maxWidth: '1200px',
-  },
-
-  position: 'absolute',
-  top: '100%',
-  left: '15px',
-  right: '15px',
-  backgroundColor: '$richBlackFogra39',
-  maxHeight: 0,
-  overflow: 'hidden',
-  transition: '0.15s $cubicOut',
-
-  '&.active': {
-    maxHeight: '321px',
-    transitionDuration: '0.5s',
   },
 })
 
