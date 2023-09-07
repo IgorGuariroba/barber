@@ -23,11 +23,15 @@ export const Section = styled('section', {
   '&::before': {
     position: 'absolute',
     content: '',
+    inset: 0,
+    backgroundColor: '$richBlackFogra3950',
+    mixBlendMode: 'multiply',
+    zIndex: '-1',
   },
 
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  backgroundPosition: 'left',
   backgroundImage: 'url("/assets/images/hero-banner.jpg")',
 })
 
@@ -53,10 +57,13 @@ export const Container = styled('div', {
 export const HeroTitle = styled('h1', {
   fontFamily: '$ffOswald',
   lineHeight: '1.3',
+
   textTransform: 'uppercase',
+
   fontWeight: '$fw600',
+
   color: '$white',
-  fontSize: 'fs40',
+  fontSize: '$fs40',
 
   '@tablet': {
     maxWidth: '680px',
