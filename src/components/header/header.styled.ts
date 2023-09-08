@@ -109,6 +109,7 @@ export const IoCallOut = styled(IoCallOutline, {
 })
 
 export const ItemTitle = styled('p', {
+  fontFamily: '$ffOswald',
   '@phoneMin': {
     color: '$eerieBlack1',
     fontWeight: '$fw500',
@@ -116,6 +117,7 @@ export const ItemTitle = styled('p', {
 })
 
 export const ItemLink = styled('a', {
+  fontFamily: '$ffOswald',
   '@phoneMin': {
     transition: 'transition1',
     '&:hover, &:focus': {
@@ -133,6 +135,7 @@ export const ItemLink = styled('a', {
 })
 
 export const StyledFacebookIcon = styled(BiLogoFacebookCircle, {
+  fontSize: '16px',
   pointerEvents: 'none',
   display: 'block',
   '&:hover, &:focus': {
@@ -141,6 +144,7 @@ export const StyledFacebookIcon = styled(BiLogoFacebookCircle, {
 })
 
 export const StyledBiTime = styled(BiTime, {
+  fontSize: '16px',
   pointerEvents: 'none',
   display: 'block',
   color: '$indianYellow',
@@ -149,7 +153,7 @@ export const StyledBiTime = styled(BiTime, {
 export const StyledYoutubeIcon = styled(AiFillYoutube, {
   pointerEvents: 'none',
   display: 'block',
-
+  fontSize: '16px',
   '&:hover, &:focus': {
     color: '$indianYellow',
   },
@@ -158,7 +162,7 @@ export const StyledYoutubeIcon = styled(AiFillYoutube, {
 export const StyledArrowRightIcon = styled(AiOutlineArrowRight, {
   pointerEvents: 'none',
   display: 'block',
-
+  fontSize: '16px',
   '&:hover, &:focus': {
     color: '$indianYellow',
   },
@@ -167,7 +171,7 @@ export const StyledArrowRightIcon = styled(AiOutlineArrowRight, {
 export const StyledTwitterIcon = styled(AiOutlineTwitter, {
   pointerEvents: 'none',
   display: 'block',
-
+  fontSize: '16px',
   '&:hover, &:focus': {
     color: '$indianYellow',
   },
@@ -176,7 +180,7 @@ export const StyledTwitterIcon = styled(AiOutlineTwitter, {
 export const StyledWechatLogo = styled(PiWechatLogo, {
   pointerEvents: 'none',
   display: 'block',
-
+  fontSize: '16px',
   '&:hover, &:focus': {
     color: '$indianYellow',
   },
@@ -199,7 +203,7 @@ export const SocialLink = styled('a', {
   fontSize: '15px',
   transition: '$transition1',
   '&:hover, &:focus': {
-    color: 'var(--indian-yellow)',
+    color: '$indianYellow',
   },
 })
 
@@ -215,8 +219,8 @@ export const HeaderBottom = styled('div', {
     active: {
       true: {
         position: 'fixed',
-        top: 0,
-        backgroundColor: 'var(--rich-black-fogra-39)',
+        top: 90,
+        backgroundColor: '$richBlackFogra39',
         transform: 'translateY(-100%)',
         animation: 'slideIn 0.5s ease forwards',
       },
@@ -329,7 +333,7 @@ export const NavbarLink = styled('a', {
   transition: '$transition1',
 
   '&:hover, &:focus': {
-    color: 'var(--indian-yellow)',
+    color: '$indianYellow',
   },
 
   '@tablet': {

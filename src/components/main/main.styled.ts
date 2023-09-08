@@ -57,11 +57,8 @@ export const Container = styled('div', {
 export const HeroTitle = styled('h1', {
   fontFamily: '$ffOswald',
   lineHeight: '1.3',
-
   textTransform: 'uppercase',
-
-  fontWeight: '$fw600',
-
+  fontWeight: '$fw700',
   color: '$white',
   fontSize: '$fs40',
 

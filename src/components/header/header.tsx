@@ -38,6 +38,7 @@ export function Header() {
     const scrollHandler = () => {
       if (window.scrollY > 100) {
         setActive(true)
+        console.log('acitve: ', true)
       } else {
         setActive(false)
       }
@@ -56,14 +57,14 @@ export function Header() {
           <HeaderTopList>
             <HeaderTopItem>
               <IoCallOut />
-              <ItemTitle>Call Us :</ItemTitle>
+              <ItemTitle>Ligue para nós :</ItemTitle>
               <ItemLink href="tel:01234567895">012 (345) 67 895</ItemLink>
             </HeaderTopItem>
 
             <HeaderTopItem>
               <StyledBiTime />
-              <ItemTitle>Opening Hour :</ItemTitle>
-              <p>Sunday - Friday, 08 am - 09 pm</p>
+              <ItemTitle>Horário de funcionamento :</ItemTitle>
+              <ItemLink>Domingo - Sexta-feira, 08h - 21h</ItemLink>
             </HeaderTopItem>
 
             <li>
