@@ -194,7 +194,12 @@ export const ServiceCard = styled('div', {
 })
 
 export const CardIcon = styled(Image, {
-  color: '$indianYellow',
+  filter:
+    'invert(71%) sepia(4%) saturate(6015%) hue-rotate(351deg) brightness(104%) contrast(67%)',
   fontSize: '70px',
   lineHeight: '1',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginInline: 'auto',
 })

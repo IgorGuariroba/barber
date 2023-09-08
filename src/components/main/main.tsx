@@ -54,6 +54,8 @@ export function Main() {
                   <CardIcon
                     src="/assets/images/salao-de-beleza.svg"
                     alt="Icone de uma tesoura e pente"
+                    width={70}
+                    height={70}
                   />
 
                   <h3 className="h3">
@@ -78,6 +80,8 @@ export function Main() {
                   <CardIcon
                     src="/assets/images/xampu.svg"
                     alt="Mulher lavando o cabelo"
+                    width={70}
+                    height={70}
                   />
 
                   <h3 className="h3">
@@ -102,6 +106,8 @@ export function Main() {
                   <CardIcon
                     src="/assets/images/pedra-quente.svg"
                     alt="Mulher recebendo massagem no corpo"
+                    width={70}
+                    height={70}
                   />
 
                   <h3 className="h3">
@@ -126,6 +132,8 @@ export function Main() {
                   <CardIcon
                     src="/assets/images/spa.svg"
                     alt="pedra e vela para spa"
+                    width={70}
+                    height={70}
                   />
 
                   <h3 className="h3">
@@ -150,6 +158,8 @@ export function Main() {
                   <CardIcon
                     src="/assets/images/navalha.svg"
                     alt="navalha utilizada para cortar cabelo"
+                    width={70}
+                    height={70}
                   />
 
                   <h3 className="h3">
@@ -174,6 +184,8 @@ export function Main() {
                   <CardIcon
                     src="/assets/images/tintura.svg"
                     alt="pote de tinta para pintar cabelo"
+                    width={70}
+                    height={70}
                   />
                   <i className="flaticon-hair-dye"></i>
 
