@@ -1,11 +1,18 @@
 import Image from 'next/image'
 import {
   ButtonExplore,
+  CardIcon,
   Container,
+  GridList,
   HeroText,
   HeroTitle,
   Section,
+  SectionServices,
+  SectionText,
+  ServiceCard,
+  ServiceProvider,
   Span,
+  StyledArrowRightIcon,
 } from './main.styled'
 
 export function Main() {
@@ -17,38 +24,37 @@ export function Main() {
             <HeroTitle>Barbers & Hair Cutting</HeroTitle>
 
             <HeroText>
-              Sit amet consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua suspendisse ultrices
-              gravida
+              No nosso salão de cabeleireiro, não apenas renovamos visuais, mas
+              também a confiança e a autoestima de nossos clientes. Com uma
+              equipe talentosa e dedicada, estamos prontos para fazer de você a
+              melhor versão de si mesmo. Agende seu horário hoje e veja a
+              diferença acontecer!
             </HeroText>
 
             <ButtonExplore href="#">
-              <Span>Explore Our Services</Span>
-
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              <Span>Veja o Que Oferecemos</Span>
+              <StyledArrowRightIcon />
             </ButtonExplore>
           </Container>
         </Section>
 
-        <section
-          className="section service"
-          id="services"
-          aria-label="services"
-        >
-          <div className="container">
-            <h2 className="h2 section-title text-center">Service We Provide</h2>
+        <SectionServices id="services" aria-label="services">
+          <Container>
+            <ServiceProvider>Nossas Especialidades</ServiceProvider>
 
-            <p className="section-text text-center">
-              Sit amet consectetur adipiscing elit sed do eiusmod tempor
-              incididunt labore dolore magna aliqua suspendisse
-            </p>
+            <SectionText>
+              Descubra nossas especialidades em cabelo, tratamento e beleza. De
+              cortes a procedimentos de spa, transformamos sua aparência e
+              bem-estar.
+            </SectionText>
 
-            <ul className="grid-list">
+            <GridList>
               <li>
-                <div className="service-card">
-                  <div className="card-icon">
-                    <i className="flaticon-salon"></i>
-                  </div>
+                <ServiceCard>
+                  <CardIcon
+                    src="/assets/images/salao-de-beleza.svg"
+                    alt="Icone de uma tesoura e pente"
+                  />
 
                   <h3 className="h3">
                     <a href="#" className="card-title">
@@ -62,19 +68,17 @@ export function Main() {
                   </p>
 
                   <a href="#" className="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </a>
-                </div>
+                </ServiceCard>
               </li>
 
               <li>
-                <div className="service-card">
-                  <div className="card-icon">
-                    <i className="flaticon-shampoo"></i>
-                  </div>
+                <ServiceCard>
+                  <CardIcon
+                    src="/assets/images/xampu.svg"
+                    alt="Mulher lavando o cabelo"
+                  />
 
                   <h3 className="h3">
                     <a href="#" className="card-title">
@@ -88,19 +92,17 @@ export function Main() {
                   </p>
 
                   <a href="#" className="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </a>
-                </div>
+                </ServiceCard>
               </li>
 
               <li>
-                <div className="service-card">
-                  <div className="card-icon">
-                    <i className="flaticon-hot-stone"></i>
-                  </div>
+                <ServiceCard>
+                  <CardIcon
+                    src="/assets/images/pedra-quente.svg"
+                    alt="Mulher recebendo massagem no corpo"
+                  />
 
                   <h3 className="h3">
                     <a href="#" className="card-title">
@@ -114,19 +116,17 @@ export function Main() {
                   </p>
 
                   <a href="#" className="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </a>
-                </div>
+                </ServiceCard>
               </li>
 
               <li>
-                <div className="service-card">
-                  <div className="card-icon">
-                    <i className="flaticon-treatment"></i>
-                  </div>
+                <ServiceCard>
+                  <CardIcon
+                    src="/assets/images/spa.svg"
+                    alt="pedra e vela para spa"
+                  />
 
                   <h3 className="h3">
                     <a href="#" className="card-title">
@@ -140,19 +140,17 @@ export function Main() {
                   </p>
 
                   <a href="#" className="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </a>
-                </div>
+                </ServiceCard>
               </li>
 
               <li>
-                <div className="service-card">
-                  <div className="card-icon">
-                    <i className="flaticon-shaving-razor"></i>
-                  </div>
+                <ServiceCard>
+                  <CardIcon
+                    src="/assets/images/navalha.svg"
+                    alt="navalha utilizada para cortar cabelo"
+                  />
 
                   <h3 className="h3">
                     <a href="#" className="card-title">
@@ -166,19 +164,18 @@ export function Main() {
                   </p>
 
                   <a href="#" className="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </a>
-                </div>
+                </ServiceCard>
               </li>
 
               <li>
-                <div className="service-card">
-                  <div className="card-icon">
-                    <i className="flaticon-hair-dye"></i>
-                  </div>
+                <ServiceCard>
+                  <CardIcon
+                    src="/assets/images/tintura.svg"
+                    alt="pote de tinta para pintar cabelo"
+                  />
+                  <i className="flaticon-hair-dye"></i>
 
                   <h3 className="h3">
                     <a href="#" className="card-title">
@@ -192,22 +189,18 @@ export function Main() {
                   </p>
 
                   <a href="#" className="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </a>
-                </div>
+                </ServiceCard>
               </li>
-            </ul>
-          </div>
-        </section>
+            </GridList>
+          </Container>
+        </SectionServices>
 
         <section
           className="section pricing has-bg-image has-before"
           id="pricing"
           aria-label="pricing"
-          // style={{backgroundImage: url('/assets/images/pricing-bg.jpg')}
         >
           <div className="container">
             <h2 className="h2 section-title text-center">
@@ -532,7 +525,7 @@ export function Main() {
               <a href="#" className="btn has-before">
                 <span className="span">Explore More Gallery</span>
 
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                <StyledArrowRightIcon />
               </a>
             </div>
 
@@ -559,10 +552,7 @@ export function Main() {
                     <p className="card-text">Barbers & Salon Services</p>
 
                     <a href="#" className="card-btn" aria-label="Read more">
-                      <ion-icon
-                        name="arrow-forward"
-                        aria-hidden="true"
-                      ></ion-icon>
+                      <StyledArrowRightIcon />
                     </a>
                   </div>
                 </div>
@@ -590,10 +580,7 @@ export function Main() {
                     <p className="card-text">Barbers & Salon Services</p>
 
                     <a href="#" className="card-btn" aria-label="Read more">
-                      <ion-icon
-                        name="arrow-forward"
-                        aria-hidden="true"
-                      ></ion-icon>
+                      <StyledArrowRightIcon />
                     </a>
                   </div>
                 </div>
@@ -621,10 +608,7 @@ export function Main() {
                     <p className="card-text">Barbers & Salon Services</p>
 
                     <a href="#" className="card-btn" aria-label="Read more">
-                      <ion-icon
-                        name="arrow-forward"
-                        aria-hidden="true"
-                      ></ion-icon>
+                      <StyledArrowRightIcon />
                     </a>
                   </div>
                 </div>
@@ -652,10 +636,7 @@ export function Main() {
                     <p className="card-text">Barbers & Salon Services</p>
 
                     <a href="#" className="card-btn" aria-label="Read more">
-                      <ion-icon
-                        name="arrow-forward"
-                        aria-hidden="true"
-                      ></ion-icon>
+                      <StyledArrowRightIcon />
                     </a>
                   </div>
                 </div>
@@ -747,10 +728,7 @@ export function Main() {
                   <button type="submit" className="form-btn">
                     <span className="span">Appointment Now</span>
 
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
+                    <StyledArrowRightIcon />
                   </button>
                 </form>
               </div>

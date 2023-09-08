@@ -1,4 +1,6 @@
 import { styled } from '@/styles/stitches.config'
+import { AiOutlineArrowRight } from 'react-icons/ai'
+import Image from 'next/image'
 
 export const Section = styled('section', {
   paddingBlock: '$sectionPadding',
@@ -129,3 +131,70 @@ export const ButtonExplore = styled('a', {
 })
 
 export const Span = styled('span', {})
+
+export const StyledArrowRightIcon = styled(AiOutlineArrowRight, {
+  pointerEvents: 'none',
+  display: 'block',
+  fontSize: '16px',
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
+})
+
+export const SectionServices = styled('section', {
+  paddingBlock: '$sectionPadding',
+  textAlign: 'center',
+})
+
+export const ServiceProvider = styled('h2', {
+  fontFamily: '$ffOswald',
+  lineHeight: '1.3',
+  color: '$eerieBlack1',
+  textTransform: 'uppercase',
+  fontSize: '$fs30',
+  textAlign: 'center',
+
+  '@phoneMin': {
+    fontSize: '$fs30',
+  },
+
+  '@phone': {
+    fontSize: '4rem',
+  },
+})
+
+export const SectionText = styled('p', {
+  marginBlock: '15px 55px',
+  textAlign: 'center',
+
+  '@phone': {
+    maxWidth: '50ch',
+    marginInline: 'auto',
+  },
+})
+
+export const GridList = styled('ul', {
+  display: 'grid',
+  gap: 30,
+
+  '@phone': {
+    gridTemplateColumns: '1fr 1fr',
+  },
+
+  '@tablet': {
+    gridTemplateColumns: 'repeat(3,1fr)',
+  },
+})
+
+export const ServiceCard = styled('div', {
+  backgroundColor: '$white',
+  padding: '60px 25px',
+  boxShadow: '$shadow1',
+  borderRadius: '$radius8',
+})
+
+export const CardIcon = styled(Image, {
+  color: '$indianYellow',
+  fontSize: '70px',
+  lineHeight: '1',
+})

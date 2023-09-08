@@ -30,10 +30,12 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
     },
     radii: {
       radius5: '5px',
+      radius8: '8px',
     },
     fontSizes: {
       fs14: '1.4rem',
       fs40: '11rem',
+      fs30: '3rem',
     },
     space: {
       sectionPadding: '120px',
@@ -48,6 +50,9 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
       fw500: '500',
       fw600: '600',
       fw700: '700',
+    },
+    shadows: {
+      shadow1: '10px 0 60px hsla(0, 0%, 15%, 0.07)',
     },
   },
   media: {

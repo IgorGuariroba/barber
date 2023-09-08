@@ -222,7 +222,7 @@ export const HeaderBottom = styled('div', {
         top: 90,
         backgroundColor: '$richBlackFogra39',
         transform: 'translateY(-100%)',
-        animation: 'slideIn 0.5s ease forwards',
+        animation: 'slideIn 0.40s ease forwards',
       },
     },
   },
@@ -257,7 +257,7 @@ export const Logo = styled('div', {
   color: '$indianYellow',
   fontFamily: '$ffOswald',
   fontSize: '2.7rem',
-  fontWeight: 'fw600',
+  fontWeight: 'bold',
   textTransform: 'uppercase',
   lineHeight: '1.4',
 

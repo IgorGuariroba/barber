@@ -107,27 +107,27 @@ export function Header() {
           <Navbar active={active}>
             <NavbarList>
               <NavbarItem>
-                <NavbarLink href="#home">Home</NavbarLink>
+                <NavbarLink href="#home">Menu</NavbarLink>
               </NavbarItem>
 
               <NavbarItem>
-                <NavbarLink href="#services">Services</NavbarLink>
+                <NavbarLink href="#services">Serviços</NavbarLink>
               </NavbarItem>
 
               <NavbarItem>
-                <NavbarLink href="#pricing">Pricing</NavbarLink>
+                <NavbarLink href="#pricing">Preços</NavbarLink>
               </NavbarItem>
 
               <NavbarItem>
-                <NavbarLink href="#gallery">Gallery</NavbarLink>
+                <NavbarLink href="#gallery">Catálogo</NavbarLink>
               </NavbarItem>
 
               <NavbarItem>
-                <NavbarLink href="#appointment">Appointment</NavbarLink>
+                <NavbarLink href="#appointment">Agendamento</NavbarLink>
               </NavbarItem>
 
               <NavbarItem>
-                <NavbarLink href="#">Contact</NavbarLink>
+                <NavbarLink href="#">Contato</NavbarLink>
               </NavbarItem>
             </NavbarList>
           </Navbar>
@@ -137,7 +137,7 @@ export function Header() {
           </NavToggleBtn>
 
           <Bottom href="#">
-            <Span>Appointment</Span>
+            <Span>Agendar Horário</Span>
             <StyledArrowRightIcon />
           </Bottom>
         </ContainerHeaderBottom>
