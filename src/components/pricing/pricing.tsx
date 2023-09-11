@@ -3,11 +3,7 @@ import { CardText, SectionPricing } from '@/components/pricing/pricing.styled'
 
 export function Pricing() {
   return (
-    <SectionPricing
-      className="section pricing has-bg-image has-before"
-      id="pricing"
-      aria-label="pricing"
-    >
+    <SectionPricing id="pricing" aria-label="pricing">
       <div className="container">
         <h2 className="h2 section-title text-center">Awesome Pricing Plan</h2>
 

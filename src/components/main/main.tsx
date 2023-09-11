@@ -34,7 +34,6 @@ export function Main() {
             </ButtonExplore>
           </Container>
         </Section>
-
         <ServicesCard />
         <Pricing />
 
