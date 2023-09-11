@@ -34,6 +34,7 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
     },
     fontSizes: {
       fs14: '1.4rem',
+      fs24: '2.4rem',
       fs40: '11rem',
       fs30: '3rem',
     },
@@ -53,6 +54,7 @@ export const { config, css, getCssText, globalCss, styled } = createStitches({
     },
     shadows: {
       shadow1: '10px 0 60px hsla(0, 0%, 15%, 0.07)',
+      shadow2: '10px 0 60px hsla(0, 0%, 15%, 0.1)',
     },
   },
   media: {

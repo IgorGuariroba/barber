@@ -166,6 +166,7 @@ export const ServiceProvider = styled('h2', {
 export const SectionText = styled('p', {
   marginBlock: '15px 55px',
   textAlign: 'center',
+  fontFamily: '$ffRubik',
 
   '@phone': {
     maxWidth: '50ch',
@@ -202,4 +203,44 @@ export const CardIcon = styled(Image, {
   justifyContent: 'center',
   alignItems: 'center',
   marginInline: 'auto',
+})
+
+export const H3Title = styled('h3', {
+  fontFamily: '$ffOswald',
+  lineHeight: '1.3',
+  fontWeight: '$fw600',
+  color: '$eerieBlack1',
+  fontSize: '$fs24',
+  marginTop: '3rem',
+})
+
+export const CardTitle = styled('a', {
+  marginBlock: '15px 12px',
+  transition: '$transition1',
+
+  '&:hover, &:focus': {
+    color: '$indianYellow',
+  },
+})
+
+export const CardText = styled('p', {
+  fontFamily: '$ffRubik',
+  marginBlockEnd: '30px',
+})
+
+export const CardBtn = styled('a', {
+  color: '$indianYellow',
+  backgroundColor: '$white',
+  maxWidth: 'max-content',
+  marginInline: 'auto',
+  fontSize: '30px',
+  padding: '15px',
+  boxShadow: '$shadow2',
+  borderRadius: '$radius5',
+  transition: '$transition2',
+
+  '&:hover, &:focus': {
+    backgroundColor: '$indianYellow',
+    color: '$white',
+  },
 })

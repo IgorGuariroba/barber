@@ -1,9 +1,13 @@
 import Image from 'next/image'
 import {
   ButtonExplore,
+  CardBtn,
   CardIcon,
+  CardText,
+  CardTitle,
   Container,
   GridList,
+  H3Title,
   HeroText,
   HeroTitle,
   Section,
@@ -58,20 +62,18 @@ export function Main() {
                     height={70}
                   />
 
-                  <h3 className="h3">
-                    <a href="#" className="card-title">
-                      Hair Cutting Style
-                    </a>
-                  </h3>
+                  <H3Title>
+                    <CardTitle href="#">Hair Cutting Style</CardTitle>
+                  </H3Title>
 
-                  <p className="card-text">
+                  <CardText>
                     Sit amet consectetur adipisci elit sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  </CardText>
 
-                  <a href="#" className="card-btn" aria-label="more">
+                  <CardBtn href="#" aria-label="more">
                     <StyledArrowRightIcon />
-                  </a>
+                  </CardBtn>
                 </ServiceCard>
               </li>
 
@@ -84,20 +86,18 @@ export function Main() {
                     height={70}
                   />
 
-                  <h3 className="h3">
-                    <a href="#" className="card-title">
-                      Hair Washing
-                    </a>
-                  </h3>
+                  <H3Title>
+                    <CardTitle href="#">Hair Washing</CardTitle>
+                  </H3Title>
 
-                  <p className="card-text">
+                  <CardText>
                     Sit amet consectetur adipisci elit sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  </CardText>
 
-                  <a href="#" className="card-btn" aria-label="more">
+                  <CardBtn href="#" aria-label="more">
                     <StyledArrowRightIcon />
-                  </a>
+                  </CardBtn>
                 </ServiceCard>
               </li>
 
@@ -110,20 +110,18 @@ export function Main() {
                     height={70}
                   />
 
-                  <h3 className="h3">
-                    <a href="#" className="card-title">
-                      Body Treatments
-                    </a>
-                  </h3>
+                  <H3Title>
+                    <CardTitle href="#">Body Treatments</CardTitle>
+                  </H3Title>
 
-                  <p className="card-text">
+                  <CardText>
                     Sit amet consectetur adipisci elit sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  </CardText>
 
-                  <a href="#" className="card-btn" aria-label="more">
+                  <CardBtn href="#" aria-label="more">
                     <StyledArrowRightIcon />
-                  </a>
+                  </CardBtn>
                 </ServiceCard>
               </li>
 
@@ -136,20 +134,18 @@ export function Main() {
                     height={70}
                   />
 
-                  <h3 className="h3">
-                    <a href="#" className="card-title">
-                      Beauty & Spa
-                    </a>
-                  </h3>
+                  <H3Title>
+                    <CardTitle href="#">Beauty & Spa</CardTitle>
+                  </H3Title>
 
-                  <p className="card-text">
+                  <CardText>
                     Sit amet consectetur adipisci elit sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  </CardText>
 
-                  <a href="#" className="card-btn" aria-label="more">
+                  <CardBtn href="#" aria-label="more">
                     <StyledArrowRightIcon />
-                  </a>
+                  </CardBtn>
                 </ServiceCard>
               </li>
 
@@ -162,20 +158,18 @@ export function Main() {
                     height={70}
                   />
 
-                  <h3 className="h3">
-                    <a href="#" className="card-title">
-                      Stylist Shaving
-                    </a>
-                  </h3>
+                  <H3Title>
+                    <CardTitle href="#">Stylist Shaving</CardTitle>
+                  </H3Title>
 
-                  <p className="card-text">
+                  <CardText>
                     Sit amet consectetur adipisci elit sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  </CardText>
 
-                  <a href="#" className="card-btn" aria-label="more">
+                  <CardBtn href="#" aria-label="more">
                     <StyledArrowRightIcon />
-                  </a>
+                  </CardBtn>
                 </ServiceCard>
               </li>
 
@@ -189,20 +183,18 @@ export function Main() {
                   />
                   <i className="flaticon-hair-dye"></i>
 
-                  <h3 className="h3">
-                    <a href="#" className="card-title">
-                      Multi Hair Colors
-                    </a>
-                  </h3>
+                  <H3Title>
+                    <CardTitle href="#">Multi Hair Colors</CardTitle>
+                  </H3Title>
 
-                  <p className="card-text">
+                  <CardText>
                     Sit amet consectetur adipisci elit sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  </CardText>
 
-                  <a href="#" className="card-btn" aria-label="more">
+                  <CardBtn href="#" aria-label="more">
                     <StyledArrowRightIcon />
-                  </a>
+                  </CardBtn>
                 </ServiceCard>
               </li>
             </GridList>
@@ -316,7 +308,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Hair Cutting & Fitting</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="89">
@@ -343,7 +335,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Shaving & Facial</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="45">
@@ -370,7 +362,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Hair Color & Wash</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="35">
@@ -397,7 +389,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Body Massage</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="56">
@@ -424,7 +416,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Beauty & Spa</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="27">
@@ -451,7 +443,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Facial & Face Wash</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="63">
@@ -478,7 +470,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Backbone Massage</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="43">
@@ -505,7 +497,7 @@ export function Main() {
                     <div className="wrapper">
                       <h3 className="h3 card-title">Meditation & Massage</h3>
 
-                      <p className="card-text">Clean & simple 30-40 minutes</p>
+                      <CardText>Clean & simple 30-40 minutes</CardText>
                     </div>
 
                     <data className="card-price" value="74">
@@ -561,7 +553,7 @@ export function Main() {
                   <div className="card-content">
                     <h3 className="h3 card-title">Hair Cutting</h3>
 
-                    <p className="card-text">Barbers & Salon Services</p>
+                    <CardText>Barbers & Salon Services</CardText>
 
                     <a href="#" className="card-btn" aria-label="Read more">
                       <StyledArrowRightIcon />
@@ -589,7 +581,7 @@ export function Main() {
                   <div className="card-content">
                     <h3 className="h3 card-title">Hair Cutting</h3>
 
-                    <p className="card-text">Barbers & Salon Services</p>
+                    <CardText>Barbers & Salon Services</CardText>
 
                     <a href="#" className="card-btn" aria-label="Read more">
                       <StyledArrowRightIcon />
@@ -617,7 +609,7 @@ export function Main() {
                   <div className="card-content">
                     <h3 className="h3 card-title">Hair Cutting</h3>
 
-                    <p className="card-text">Barbers & Salon Services</p>
+                    <CardText>Barbers & Salon Services</CardText>
 
                     <a href="#" className="card-btn" aria-label="Read more">
                       <StyledArrowRightIcon />
@@ -645,7 +637,7 @@ export function Main() {
                   <div className="card-content">
                     <h3 className="h3 card-title">Hair Cutting</h3>
 
-                    <p className="card-text">Barbers & Salon Services</p>
+                    <CardText>Barbers & Salon Services</CardText>
 
                     <a href="#" className="card-btn" aria-label="Read more">
                       <StyledArrowRightIcon />
