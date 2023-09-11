@@ -2,7 +2,10 @@ import Image from 'next/image'
 import {
   CardText,
   Container,
+  PricingTabContainer,
+  pricingTabContainer,
   SectionPricing,
+  SectionText,
   SectionTitle,
 } from '@/components/pricing/pricing.styled'
 
@@ -12,12 +15,15 @@ export function Pricing() {
       <Container>
         <SectionTitle>Opções de Preços Incríveis</SectionTitle>
 
-        <p className="section-text text-center">
-          Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
-          labore dolore magna aliqua suspendisse
-        </p>
+        <SectionText>
+          Oferecemos uma gama variada de tratamentos com preços incríveis. De
+          cortes de cabelo a massagens relaxantes, proporcionamos cuidado
+          profissional e máxima satisfação. Redescubra sua beleza e renove seu
+          bem-estar com nossos serviços de qualidade. Confira hoje as nossas
+          opções e agende já o seu horário!
+        </SectionText>
 
-        <div className="pricing-tab-container">
+        <PricingTabContainer>
           <ul className="tab-filter">
             <li>
               <button className="filter-btn active" data-filter-btn="all">
@@ -298,7 +304,7 @@ export function Pricing() {
               </div>
             </li>
           </ul>
-        </div>
+        </PricingTabContainer>
       </Container>
     </SectionPricing>
   )

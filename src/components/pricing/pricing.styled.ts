@@ -61,3 +61,24 @@ export const SectionTitle = styled('h2', {
     fontSize: ' 4rem',
   },
 })
+
+export const SectionText = styled('p', {
+  marginBlock: '15px 45px',
+  color: '$white50',
+  textAlign: 'center',
+  fontFamily: '$ffRubik',
+
+  '@phone': {
+    maxWidth: '50ch',
+    marginInline: 'auto',
+  },
+})
+
+export const PricingTabContainer = styled('div', {
+  backgroundColor: '$white',
+  padding: '40px 5px',
+
+  '@phone': {
+    padding: '40px',
+  },
+})
