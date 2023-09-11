@@ -193,6 +193,9 @@ export const ServiceCard = styled('div', {
   padding: '60px 25px',
   boxShadow: '$shadow1',
   borderRadius: '$radius8',
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
 })
 
 export const CardIcon = styled(Image, {
@@ -239,7 +242,7 @@ export const CardBtn = styled('a', {
   boxShadow: '$shadow2',
   borderRadius: '$radius5',
   transition: '$transition2',
-
+  marginTop: 'auto',
   '&:hover, &:focus': {
     backgroundColor: '$indianYellow',
     color: '$white',
