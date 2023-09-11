@@ -25,7 +25,7 @@ export function Main() {
       <article>
         <Section id="home" aria-label="home">
           <Container>
-            <HeroTitle>Barbers & Hair Cutting</HeroTitle>
+            <HeroTitle>Respeito & Identidade Valorizada</HeroTitle>
 
             <HeroText>
               No nosso salão de cabeleireiro, não apenas renovamos visuais, mas
