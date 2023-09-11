@@ -177,6 +177,7 @@ export const SectionText = styled('p', {
 export const GridList = styled('ul', {
   display: 'grid',
   gap: 30,
+  gridAutoRows: '1fr',
 
   '@phone': {
     gridTemplateColumns: '1fr 1fr',

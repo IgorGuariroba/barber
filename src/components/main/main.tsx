@@ -63,12 +63,19 @@ export function Main() {
                   />
 
                   <H3Title>
-                    <CardTitle href="#">Hair Cutting Style</CardTitle>
+                    <CardTitle href="#">Estilo de Corte de Cabelo</CardTitle>
                   </H3Title>
 
                   <CardText>
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Descubra o corte de cabelo perfeito para você no nosso
+                    salão! Nossos cabeleireiros entendem a beleza da
+                    individualidade e estão prontos para destacar o seu estilo
+                    único. Ama tendências? Delicie-se com nossos cortes
+                    assimétricos modernos. Prefere um look clássico? Nosso bob
+                    chic e intemporal é perfeito. Fã do vintage? Temos estilos
+                    inspirados nas décadas de 50 e 60. Cachos? Nossos cortes
+                    valorizam a beleza natural de seu cabelo. Agende já e
+                    transforme seu visual conosco!
                   </CardText>
 
                   <CardBtn href="#" aria-label="more">
@@ -87,12 +94,17 @@ export function Main() {
                   />
 
                   <H3Title>
-                    <CardTitle href="#">Hair Washing</CardTitle>
+                    <CardTitle href="#">Hidratação Profissional</CardTitle>
                   </H3Title>
 
                   <CardText>
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Cuide-se e sinta a diferença com nossos tratamentos de
+                    hidratação para os cabelos! Nosso tratamento penetra
+                    profundamente nos fios, repondo a umidade para um cabelo
+                    saudável, com brilho e maciez incomparáveis. Diga adeus aos
+                    fios secos e opacos e receba cabelos revitalizados e
+                    radiantes. Venha experimentar nosso tratamento de hidratação
+                    e sinta seu cabelo receber o amor que ele merece.
                   </CardText>
 
                   <CardBtn href="#" aria-label="more">
@@ -111,12 +123,17 @@ export function Main() {
                   />
 
                   <H3Title>
-                    <CardTitle href="#">Body Treatments</CardTitle>
+                    <CardTitle href="#">
+                      Tratamentos Corporais Exclusivos
+                    </CardTitle>
                   </H3Title>
 
                   <CardText>
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Revitalize sua pele com nossos tratamentos corporais! Nossas
+                    terapias relaxantes nutrem e rejuvenescem,
+                    proporcionando-lhe uma pele radiante e um relaxamento
+                    profundo. Venha experimentar a verdadeira serenidade com
+                    nossos tratamentos corporais!
                   </CardText>
 
                   <CardBtn href="#" aria-label="more">
