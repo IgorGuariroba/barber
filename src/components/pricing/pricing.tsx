@@ -1,11 +1,16 @@
 import Image from 'next/image'
-import { CardText, SectionPricing } from '@/components/pricing/pricing.styled'
+import {
+  CardText,
+  Container,
+  SectionPricing,
+  SectionTitle,
+} from '@/components/pricing/pricing.styled'
 
 export function Pricing() {
   return (
     <SectionPricing id="pricing" aria-label="pricing">
-      <div className="container">
-        <h2 className="h2 section-title text-center">Awesome Pricing Plan</h2>
+      <Container>
+        <SectionTitle>Opções de Preços Incríveis</SectionTitle>
 
         <p className="section-text text-center">
           Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
@@ -294,7 +299,7 @@ export function Pricing() {
             </li>
           </ul>
         </div>
-      </div>
+      </Container>
     </SectionPricing>
   )
 }
