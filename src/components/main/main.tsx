@@ -152,12 +152,15 @@ export function Main() {
                   />
 
                   <H3Title>
-                    <CardTitle href="#">Beauty & Spa</CardTitle>
+                    <CardTitle href="#">Beleza & Spa</CardTitle>
                   </H3Title>
 
                   <CardText>
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Relaxe, rejuvenesça e renove no nosso Beleza & Spa. Nossos
+                    profissionais altamente qualificados cuidarão de você,
+                    oferecendo uma variedade de tratamentos revigorantes e
+                    terapêuticos para revitalizar seu corpo e alma. Venha nos
+                    visitar e experimente a verdadeira beleza.
                   </CardText>
 
                   <CardBtn href="#" aria-label="more">
@@ -176,12 +179,15 @@ export function Main() {
                   />
 
                   <H3Title>
-                    <CardTitle href="#">Stylist Shaving</CardTitle>
+                    <CardTitle href="#">Barbeiro Estilista</CardTitle>
                   </H3Title>
 
                   <CardText>
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Transforme o seu visual com o nosso Barbeiro Estilista. De
+                    cortes modernos a estilos clássicos, os nossos especialistas
+                    oferecem um serviço de barbearia premium para garantir que
+                    você sempre esteja em sua melhor forma. Visite-nos para um
+                    tratamento exclusivo que superará suas expectativas.
                   </CardText>
 
                   <CardBtn href="#" aria-label="more">
@@ -201,12 +207,16 @@ export function Main() {
                   <i className="flaticon-hair-dye"></i>
 
                   <H3Title>
-                    <CardTitle href="#">Multi Hair Colors</CardTitle>
+                    <CardTitle href="#">Diversas Cores de Cabelo</CardTitle>
                   </H3Title>
 
                   <CardText>
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Venha descobrir a ampla gama de cores disponíveis em nosso
+                    serviço de Diversas Cores de Cabelo. Nossos profissionais
+                    especializados estão prontos para transformar seus cabelos e
+                    acentuar sua personalidade única com uma cor vibrante. Deixe
+                    sua imaginação voar e venha experimentar uma nova cor de
+                    cabelo hoje mesmo!
                   </CardText>
 
                   <CardBtn href="#" aria-label="more">
