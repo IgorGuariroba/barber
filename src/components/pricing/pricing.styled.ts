@@ -90,3 +90,12 @@ export const TabFilter = styled('ul', {
   gap: '3px',
   marginBlockEnd: '30px',
 })
+
+export const GrdList = styled('ul', {
+  display: 'grid',
+  gap: '30px',
+  paddingInline: '20px',
+  '@tablet': {
+    gridTemplateColumns: '1fr 1fr',
+  },
+})

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import {
   CardText,
   Container,
+  GrdList,
   PricingTabContainer,
   SectionPricing,
   SectionText,
@@ -10,6 +11,7 @@ import {
 } from './pricing.styled'
 import { ButtonFilter } from '@/components/ButtonFilter/buttonFilter'
 import { CardIcon } from '@/components/servicesCard/servicesCard.styled'
+import { Shaving } from '@/components/shaving/shaving'
 
 export function Pricing() {
   return (
@@ -25,304 +27,142 @@ export function Pricing() {
 
         <PricingTabContainer>
           <TabFilter>
-            <li>
-              <ButtonFilter
-                active={true}
-                data-filter-btn="all"
-                text="All Pricing"
-              >
-                <CardIcon
-                  src="/assets/images/salao-de-beleza.svg"
-                  alt="Icone de uma tesoura e pente"
-                  width={50}
-                  height={50}
-                  color="white"
-                />
-              </ButtonFilter>
-            </li>
+            <ButtonFilter
+              active={true}
+              data-filter-btn="all"
+              text="All Pricing"
+            >
+              <CardIcon
+                src="/assets/images/salao-de-beleza.svg"
+                alt="Icone de uma tesoura e pente"
+                width={50}
+                height={50}
+                color="white"
+              />
+            </ButtonFilter>
 
-            <li>
-              <ButtonFilter text="Beauty & Spa" data-filter-btn="beauty-spa">
-                <CardIcon
-                  src="/assets/images/spa.svg"
-                  alt="Icone de uma tesoura e pente"
-                  width={50}
-                  height={50}
-                  color="black"
-                />
-              </ButtonFilter>
-            </li>
+            <ButtonFilter text="Beauty & Spa" data-filter-btn="beauty-spa">
+              <CardIcon
+                src="/assets/images/spa.svg"
+                alt="Icone de uma tesoura e pente"
+                width={50}
+                height={50}
+                color="black"
+              />
+            </ButtonFilter>
 
-            <li>
-              <ButtonFilter
-                text="Body Treatments"
-                data-filter-btn="body-treatments"
-              >
-                <CardIcon
-                  src="/assets/images/pedra-quente.svg"
-                  alt="Icone de uma tesoura e pente"
-                  width={50}
-                  height={50}
-                  color="black"
-                />
-              </ButtonFilter>
-            </li>
+            <ButtonFilter
+              text="Body Treatments"
+              data-filter-btn="body-treatments"
+            >
+              <CardIcon
+                src="/assets/images/pedra-quente.svg"
+                alt="Icone de uma tesoura e pente"
+                width={50}
+                height={50}
+                color="black"
+              />
+            </ButtonFilter>
 
-            <li>
-              <ButtonFilter text="Face Washing" data-filter-btn="face-washing">
-                <CardIcon
-                  src="/assets/images/xampu.svg"
-                  alt="Icone de uma tesoura e pente"
-                  width={50}
-                  height={50}
-                  color="black"
-                />
-              </ButtonFilter>
-            </li>
+            <ButtonFilter text="Face Washing" data-filter-btn="face-washing">
+              <CardIcon
+                src="/assets/images/xampu.svg"
+                alt="Icone de uma tesoura e pente"
+                width={50}
+                height={50}
+                color="black"
+              />
+            </ButtonFilter>
 
-            <li>
-              <ButtonFilter text="Meditations" data-filter-btn="meditations">
-                <CardIcon
-                  src="/assets/images/spa.svg"
-                  alt="Icone de uma tesoura e pente"
-                  width={50}
-                  height={50}
-                  color="black"
-                />
-              </ButtonFilter>
-            </li>
+            <ButtonFilter text="Meditations" data-filter-btn="meditations">
+              <CardIcon
+                src="/assets/images/spa.svg"
+                alt="Icone de uma tesoura e pente"
+                width={50}
+                height={50}
+                color="black"
+              />
+            </ButtonFilter>
 
-            <li>
-              <ButtonFilter text="Shaving" data-filter-btn="shaving">
-                <CardIcon
-                  src="/assets/images/navalha.svg"
-                  alt="Icone de uma tesoura e pente"
-                  width={50}
-                  height={50}
-                  color="black"
-                />
-              </ButtonFilter>
-            </li>
+            <ButtonFilter text="Shaving" data-filter-btn="shaving">
+              <CardIcon
+                src="/assets/images/navalha.svg"
+                alt="Icone de uma tesoura e pente"
+                width={50}
+                height={50}
+                color="black"
+              />
+            </ButtonFilter>
           </TabFilter>
 
-          <ul className="grid-list">
-            <li data-filter="shaving">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-1.jpg"
-                    alt="Hair Cutting & Fitting"
-                    width={90}
-                    height={90}
-                    className="img-cover"
-                    layout="responsive"
-                  />
-                </figure>
+          <GrdList>
+            <Shaving
+              image="/assets/images/pricing-1.jpg"
+              alt="Rapaz recebendo um corte de cabelo"
+              titulo="Hair Cutting & Fitting"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 89,00"
+            ></Shaving>
 
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Hair Cutting & Fitting</h3>
+            <Shaving
+              image="/assets/images/pricing-2.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Shaving & Facial"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 45,00"
+            ></Shaving>
 
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
+            <Shaving
+              image="/assets/images/pricing-3.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Hair Color & Wash"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 35,00"
+            ></Shaving>
 
-                <data className="card-price" value="89">
-                  $89
-                </data>
-              </div>
-            </li>
+            <Shaving
+              image="/assets/images/pricing-4.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Body Massage"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 56,00"
+            ></Shaving>
 
-            <li data-filter="shaving">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-2.jpg"
-                    width="90"
-                    height="90"
-                    alt="Shaving & Facial"
-                    className="img-cover"
-                  />
-                </figure>
+            <Shaving
+              image="/assets/images/pricing-5.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Beauty & Spa"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 27,00"
+            ></Shaving>
 
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Shaving & Facial</h3>
+            <Shaving
+              data-filter="face-washing"
+              image="/assets/images/pricing-6.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Facial & Face Wash"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 63,00"
+            ></Shaving>
 
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
+            <Shaving
+              data-filter="body-treatments"
+              image="/assets/images/pricing-7.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Backbone Massage"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 43,00"
+            ></Shaving>
 
-                <data className="card-price" value="45">
-                  $45
-                </data>
-              </div>
-            </li>
-
-            <li data-filter="face-washing">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-3.jpg"
-                    width="90"
-                    height="90"
-                    alt="Hair Color & Wash"
-                    className="img-cover"
-                  />
-                </figure>
-
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Hair Color & Wash</h3>
-
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
-
-                <data className="card-price" value="35">
-                  $35
-                </data>
-              </div>
-            </li>
-
-            <li data-filter="body-treatments">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-4.jpg"
-                    width="90"
-                    height="90"
-                    alt="Body Massage"
-                    className="img-cover"
-                  />
-                </figure>
-
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Body Massage</h3>
-
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
-
-                <data className="card-price" value="56">
-                  $56
-                </data>
-              </div>
-            </li>
-
-            <li data-filter="beauty-spa">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-5.jpg"
-                    width="90"
-                    height="90"
-                    alt="Beauty & Spa"
-                    className="img-cover"
-                  />
-                </figure>
-
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Beauty & Spa</h3>
-
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
-
-                <data className="card-price" value="27">
-                  $27
-                </data>
-              </div>
-            </li>
-
-            <li data-filter="face-washing">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-6.jpg"
-                    width="90"
-                    height="90"
-                    alt="Facial & Face Wash"
-                    className="img-cover"
-                  />
-                </figure>
-
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Facial & Face Wash</h3>
-
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
-
-                <data className="card-price" value="63">
-                  $63
-                </data>
-              </div>
-            </li>
-
-            <li data-filter="body-treatments">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-7.jpg"
-                    width="90"
-                    height="90"
-                    alt="Backbone Massage"
-                    className="img-cover"
-                  />
-                </figure>
-
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Backbone Massage</h3>
-
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
-
-                <data className="card-price" value="43">
-                  $43
-                </data>
-              </div>
-            </li>
-
-            <li data-filter="meditations">
-              <div className="pricing-card">
-                <figure
-                  className="card-banner img-holder"
-                  // style="--width: 90; --height: 90;"
-                >
-                  <Image
-                    src="/assets/images/pricing-8.jpg"
-                    width="90"
-                    height="90"
-                    alt="Meditation & Massage"
-                    className="img-cover"
-                  />
-                </figure>
-
-                <div className="wrapper">
-                  <h3 className="h3 card-title">Meditation & Massage</h3>
-
-                  <CardText>Clean & simple 30-40 minutes</CardText>
-                </div>
-
-                <data className="card-price" value="74">
-                  $74
-                </data>
-              </div>
-            </li>
-          </ul>
+            <Shaving
+              data-filter="meditations"
+              image="/assets/images/pricing-8.jpg"
+              alt="Rapaz Cortando a barba"
+              titulo="Meditation & Massage"
+              description="Clean & simple 30-40 minutes"
+              pricing="R$ 74,00"
+            ></Shaving>
+          </GrdList>
         </PricingTabContainer>
       </Container>
     </SectionPricing>
