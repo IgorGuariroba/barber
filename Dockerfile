@@ -5,7 +5,7 @@ FROM node:18.17.1
 WORKDIR /usr/src/app
 
 # Update npm to the latest version
-RUN npm install -g npm@10.0.0
+RUN npm install -g npm@latest
 
 # Change to non-root user
 USER node

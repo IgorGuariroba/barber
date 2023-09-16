@@ -3,11 +3,13 @@ import {
   CardText,
   Container,
   PricingTabContainer,
-  pricingTabContainer,
   SectionPricing,
   SectionText,
   SectionTitle,
-} from '@/components/pricing/pricing.styled'
+  TabFilter,
+} from './pricing.styled'
+import { ButtonFilter } from '@/components/ButtonFilter/buttonFilter'
+import { CardIcon } from '@/components/servicesCard/servicesCard.styled'
 
 export function Pricing() {
   return (
@@ -18,73 +20,90 @@ export function Pricing() {
         <SectionText>
           Oferecemos uma gama variada de tratamentos com preços incríveis. De
           cortes de cabelo a massagens relaxantes, proporcionamos cuidado
-          profissional e máxima satisfação. Redescubra sua beleza e renove seu
-          bem-estar com nossos serviços de qualidade. Confira hoje as nossas
-          opções e agende já o seu horário!
+          profissional e máxima satisfação.
         </SectionText>
 
         <PricingTabContainer>
-          <ul className="tab-filter">
+          <TabFilter>
             <li>
-              <button className="filter-btn active" data-filter-btn="all">
-                <div className="btn-icon">
-                  <i className="flaticon-beauty-salon" aria-hidden="true"></i>
-                </div>
-
-                <p className="btn-text">All Pricing</p>
-              </button>
+              <ButtonFilter
+                active={true}
+                data-filter-btn="all"
+                text="All Pricing"
+              >
+                <CardIcon
+                  src="/assets/images/salao-de-beleza.svg"
+                  alt="Icone de uma tesoura e pente"
+                  width={50}
+                  height={50}
+                  color="white"
+                />
+              </ButtonFilter>
             </li>
 
             <li>
-              <button className="filter-btn" data-filter-btn="beauty-spa">
-                <div className="btn-icon">
-                  <i className="flaticon-relax" aria-hidden="true"></i>
-                </div>
-
-                <p className="btn-text">Beauty & Spa</p>
-              </button>
+              <ButtonFilter text="Beauty & Spa" data-filter-btn="beauty-spa">
+                <CardIcon
+                  src="/assets/images/spa.svg"
+                  alt="Icone de uma tesoura e pente"
+                  width={50}
+                  height={50}
+                  color="black"
+                />
+              </ButtonFilter>
             </li>
 
             <li>
-              <button className="filter-btn" data-filter-btn="body-treatments">
-                <div className="btn-icon">
-                  <i className="flaticon-massage" aria-hidden="true"></i>
-                </div>
-
-                <p className="btn-text">Body Treatments</p>
-              </button>
+              <ButtonFilter
+                text="Body Treatments"
+                data-filter-btn="body-treatments"
+              >
+                <CardIcon
+                  src="/assets/images/pedra-quente.svg"
+                  alt="Icone de uma tesoura e pente"
+                  width={50}
+                  height={50}
+                  color="black"
+                />
+              </ButtonFilter>
             </li>
 
             <li>
-              <button className="filter-btn" data-filter-btn="face-washing">
-                <div className="btn-icon">
-                  <i className="flaticon-spa" aria-hidden="true"></i>
-                </div>
-
-                <p className="btn-text">Face Washing</p>
-              </button>
+              <ButtonFilter text="Face Washing" data-filter-btn="face-washing">
+                <CardIcon
+                  src="/assets/images/xampu.svg"
+                  alt="Icone de uma tesoura e pente"
+                  width={50}
+                  height={50}
+                  color="black"
+                />
+              </ButtonFilter>
             </li>
 
             <li>
-              <button className="filter-btn" data-filter-btn="meditations">
-                <div className="btn-icon">
-                  <i className="flaticon-yoga" aria-hidden="true"></i>
-                </div>
-
-                <p className="btn-text">Meditations</p>
-              </button>
+              <ButtonFilter text="Meditations" data-filter-btn="meditations">
+                <CardIcon
+                  src="/assets/images/spa.svg"
+                  alt="Icone de uma tesoura e pente"
+                  width={50}
+                  height={50}
+                  color="black"
+                />
+              </ButtonFilter>
             </li>
 
             <li>
-              <button className="filter-btn" data-filter-btn="shaving">
-                <div className="btn-icon">
-                  <i className="flaticon-razor-blade" aria-hidden="true"></i>
-                </div>
-
-                <p className="btn-text">Shaving</p>
-              </button>
+              <ButtonFilter text="Shaving" data-filter-btn="shaving">
+                <CardIcon
+                  src="/assets/images/navalha.svg"
+                  alt="Icone de uma tesoura e pente"
+                  width={50}
+                  height={50}
+                  color="black"
+                />
+              </ButtonFilter>
             </li>
-          </ul>
+          </TabFilter>
 
           <ul className="grid-list">
             <li data-filter="shaving">

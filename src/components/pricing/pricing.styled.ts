@@ -82,3 +82,11 @@ export const PricingTabContainer = styled('div', {
     padding: '40px',
   },
 })
+
+export const TabFilter = styled('ul', {
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+  gap: '3px',
+  marginBlockEnd: '30px',
+})

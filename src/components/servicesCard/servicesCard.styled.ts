@@ -28,6 +28,16 @@ export const CardIcon = styled(Image, {
   justifyContent: 'center',
   alignItems: 'center',
   marginInline: 'auto',
+  variants: {
+    color: {
+      white: {
+        filter: 'invert(100%)',
+      },
+      black: {
+        filter: 'grayscale(100%)',
+      },
+    },
+  },
 })
 
 export const CardText = styled('p', {
