@@ -14,8 +14,8 @@ USER node
 COPY --chown=node:node . .
 
 # Install dependencies
-#RUN #npm install
+RUN npm install
 
 EXPOSE 3000
 
-CMD ["npm","dev"]
+CMD ["npm","run", "dev"]
