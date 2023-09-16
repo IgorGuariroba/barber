@@ -30,7 +30,7 @@ export function Pricing() {
             <ButtonFilter
               active={true}
               data-filter-btn="all"
-              text="All Pricing"
+              text="Todos os Preços"
             >
               <CardIcon
                 src="/assets/images/salao-de-beleza.svg"
@@ -41,7 +41,7 @@ export function Pricing() {
               />
             </ButtonFilter>
 
-            <ButtonFilter text="Beauty & Spa" data-filter-btn="beauty-spa">
+            <ButtonFilter text="Beleza e Spa" data-filter-btn="beauty-spa">
               <CardIcon
                 src="/assets/images/spa.svg"
                 alt="Icone de uma tesoura e pente"
@@ -51,10 +51,7 @@ export function Pricing() {
               />
             </ButtonFilter>
 
-            <ButtonFilter
-              text="Body Treatments"
-              data-filter-btn="body-treatments"
-            >
+            <ButtonFilter text="Massagem" data-filter-btn="body-treatments">
               <CardIcon
                 src="/assets/images/pedra-quente.svg"
                 alt="Icone de uma tesoura e pente"
@@ -64,7 +61,7 @@ export function Pricing() {
               />
             </ButtonFilter>
 
-            <ButtonFilter text="Face Washing" data-filter-btn="face-washing">
+            <ButtonFilter text="Hidratação" data-filter-btn="face-washing">
               <CardIcon
                 src="/assets/images/xampu.svg"
                 alt="Icone de uma tesoura e pente"
@@ -74,7 +71,7 @@ export function Pricing() {
               />
             </ButtonFilter>
 
-            <ButtonFilter text="Meditations" data-filter-btn="meditations">
+            <ButtonFilter text="Meditação" data-filter-btn="meditations">
               <CardIcon
                 src="/assets/images/spa.svg"
                 alt="Icone de uma tesoura e pente"
@@ -84,7 +81,7 @@ export function Pricing() {
               />
             </ButtonFilter>
 
-            <ButtonFilter text="Shaving" data-filter-btn="shaving">
+            <ButtonFilter text="Corte" data-filter-btn="shaving">
               <CardIcon
                 src="/assets/images/navalha.svg"
                 alt="Icone de uma tesoura e pente"
@@ -100,7 +97,7 @@ export function Pricing() {
               image="/assets/images/pricing-1.jpg"
               alt="Rapaz recebendo um corte de cabelo"
               titulo="Hair Cutting & Fitting"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 89,00"
             ></Shaving>
 
@@ -108,7 +105,7 @@ export function Pricing() {
               image="/assets/images/pricing-2.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Shaving & Facial"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 45,00"
             ></Shaving>
 
@@ -116,7 +113,7 @@ export function Pricing() {
               image="/assets/images/pricing-3.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Hair Color & Wash"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 35,00"
             ></Shaving>
 
@@ -124,7 +121,7 @@ export function Pricing() {
               image="/assets/images/pricing-4.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Body Massage"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 56,00"
             ></Shaving>
 
@@ -132,7 +129,7 @@ export function Pricing() {
               image="/assets/images/pricing-5.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Beauty & Spa"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 27,00"
             ></Shaving>
 
@@ -141,7 +138,7 @@ export function Pricing() {
               image="/assets/images/pricing-6.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Facial & Face Wash"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 63,00"
             ></Shaving>
 
@@ -150,7 +147,7 @@ export function Pricing() {
               image="/assets/images/pricing-7.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Backbone Massage"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 43,00"
             ></Shaving>
 
@@ -159,7 +156,7 @@ export function Pricing() {
               image="/assets/images/pricing-8.jpg"
               alt="Rapaz Cortando a barba"
               titulo="Meditation & Massage"
-              description="Clean & simple 30-40 minutes"
+              description="Limpo & simples 30-40 minutos"
               pricing="R$ 74,00"
             ></Shaving>
           </GrdList>

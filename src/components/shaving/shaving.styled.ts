@@ -65,3 +65,9 @@ export const CardPrice = styled('data', {
     lineHeight: '1.6',
   },
 })
+
+export const CardText = styled('p', {
+  fontFamily: '$ffRubik',
+  marginBlockEnd: '30px',
+  whiteSpace: 'nowrap',
+})

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { CardText } from '@/components/pricing/pricing.styled'
 import {
   CardBurn,
   CardPrice,
@@ -7,6 +6,7 @@ import {
   PricingCard,
   ShavingStyled,
   Wrapper,
+  CardText,
 } from '@/components/shaving/shaving.styled'
 
 interface PropsShaving {
