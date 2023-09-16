@@ -18,4 +18,4 @@ COPY --chown=node:node . .
 
 EXPOSE 3000
 
-CMD ["bash", "-c", "while true; do echo Docker is running...; sleep 100; done"]
+CMD ["npm dev"]
